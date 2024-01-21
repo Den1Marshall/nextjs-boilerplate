@@ -5,3 +5,4 @@ import { StateProvider } from './ui/StateProvider';
 export { StateProvider };
 export { useAppSelector };
 export { useAppDispatch };
+export { useAppStore } from './lib/useAppStore';
