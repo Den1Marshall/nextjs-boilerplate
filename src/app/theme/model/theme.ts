@@ -11,6 +11,18 @@ export const theme = extendTheme({
     fontFamily: roboto.style.fontFamily,
   },
 
+  colorSchemes: {
+    light: {},
+
+    dark: {
+      palette: {
+        background: {
+          default: '#000',
+        },
+      },
+    },
+  },
+
   components: {
     MuiContainer: {
       defaultProps: {
