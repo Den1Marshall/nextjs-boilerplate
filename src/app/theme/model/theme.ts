@@ -10,4 +10,12 @@ export const theme = extendTheme({
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
+
+  components: {
+    MuiContainer: {
+      defaultProps: {
+        disableGutters: true,
+      },
+    },
+  },
 });
