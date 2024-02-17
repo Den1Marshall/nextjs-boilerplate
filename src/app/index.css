@@ -14,6 +14,7 @@
 html {
   width: 100%;
   height: max(calc(100% + env(safe-area-inset-top)), 100%);
+  overscroll-behavior: none;
 }
 
 body {
@@ -23,6 +24,5 @@ body {
   padding-right: max(16px, env(safe-area-inset-right));
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: max(16px, env(safe-area-inset-left));
-  overflow: hidden;
-  touch-action: none;
+  overscroll-behavior: none;
 }
