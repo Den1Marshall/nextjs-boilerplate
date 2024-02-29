@@ -18,3 +18,4 @@
 - Git: Git Conventional Commits, commitlint, husky
 - PWA: next-pwa plugin, pre-configured manifest.json and additional HTML meta tags, splash screens for iOS
 - SEO: OG, Facebook, Twitter meta tags
+- Next.JS Bundle Analyzer
