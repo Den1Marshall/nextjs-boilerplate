@@ -4,6 +4,7 @@ import '@/app/index.css';
 import { RSReducedMotion } from '@/shared/ui/RSReducedMotion';
 import { FMReducedMotion } from '@/shared/ui/FMReducedMotion';
 import { startupImage } from './startupImage';
+import { AriaLinkProvider } from '@/app/AriaLinkProvider';
 
 export const metadata: Metadata = {
   title: 'CHANGETHIS',
@@ -50,7 +51,9 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning={true}>
       <body className='font-sans dark:bg-black dark:text-white'>
         <StateProvider>
-          <FMReducedMotion>{children}</FMReducedMotion>
+          <FMReducedMotion>
+            <AriaLinkProvider>{children}</AriaLinkProvider>
+          </FMReducedMotion>
         </StateProvider>
         <RSReducedMotion />
       </body>
