@@ -48,8 +48,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' suppressHydrationWarning={true}>
-      <body className='font-sans dark:bg-black dark:text-white'>
+    <html
+      lang='en'
+      suppressHydrationWarning={true}
+      className='h-screen-safe py-safe px-safe-or-5'
+    >
+      <body className='h-full font-sans dark:bg-black dark:text-white'>
         <StateProvider>
           <FMReducedMotion>
             <AriaLinkProvider>{children}</AriaLinkProvider>
