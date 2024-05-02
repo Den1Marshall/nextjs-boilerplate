@@ -9,21 +9,6 @@
   -webkit-user-select: none;
 }
 
-html {
-  overscroll-behavior: none;
-}
-
-body {
-  overscroll-behavior: none;
-  touch-action: pan-x pan-y;
-}
-
 img {
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
 }

@@ -51,7 +51,7 @@ export default function RootLayout({
     <html
       lang='en'
       suppressHydrationWarning={true}
-      className='h-screen-safe py-safe px-safe-or-5'
+      className='h-screen-safe py-safe px-safe-or-5 overscroll-none touch-pan-x touch-pan-y motion-safe:scroll-smooth'
     >
       <body className='h-full font-sans dark:bg-black dark:text-white'>
         <StateProvider>
