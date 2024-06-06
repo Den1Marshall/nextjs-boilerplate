@@ -7,6 +7,7 @@ import { AriaLinkProvider } from '@/app/AriaLinkProvider';
 export const metadata: Metadata = {
   title: 'CHANGETHIS',
   description: 'CHANGETHIS',
+  metadataBase: new URL('https://CHANGETHIS.com'),
   robots: 'all',
   alternates: {
     canonical: '/',
