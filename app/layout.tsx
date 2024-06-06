@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import '@/app/index.css';
-import { RSReducedMotion } from '@/shared/ui/RSReducedMotion';
 import { FMReducedMotion } from '@/shared/ui/FMReducedMotion';
 import { startupImage } from './startupImage';
 import { AriaLinkProvider } from '@/app/AriaLinkProvider';
@@ -56,7 +55,6 @@ export default function RootLayout({
         <FMReducedMotion>
           <AriaLinkProvider>{children}</AriaLinkProvider>
         </FMReducedMotion>
-        <RSReducedMotion />
       </body>
     </html>
   );
