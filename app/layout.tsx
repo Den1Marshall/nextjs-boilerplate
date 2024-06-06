@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next';
-import { StateProvider } from '@/app/state';
 import '@/app/index.css';
 import { RSReducedMotion } from '@/shared/ui/RSReducedMotion';
 import { FMReducedMotion } from '@/shared/ui/FMReducedMotion';
@@ -54,11 +53,9 @@ export default function RootLayout({
       className='h-[max(calc(100%_+_env(safe-area-inset-top)),_100%)] font-sans overscroll-none touch-pan-x touch-pan-y motion-safe:scroll-smooth'
     >
       <body className='h-full py-safe px-safe-or-5 dark:bg-black dark:text-white'>
-        <StateProvider>
-          <FMReducedMotion>
-            <AriaLinkProvider>{children}</AriaLinkProvider>
-          </FMReducedMotion>
-        </StateProvider>
+        <FMReducedMotion>
+          <AriaLinkProvider>{children}</AriaLinkProvider>
+        </FMReducedMotion>
         <RSReducedMotion />
       </body>
     </html>
