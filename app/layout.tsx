@@ -52,7 +52,7 @@ export default function RootLayout({
       suppressHydrationWarning={true}
       className='h-[max(calc(100%_+_env(safe-area-inset-top)),_100%)] font-sans overscroll-none touch-pan-x touch-pan-y motion-safe:scroll-smooth'
     >
-      <body className='h-full py-safe px-safe-or-5 dark:bg-black dark:text-white'>
+      <body className='h-full py-safe px-safe-or-5 dark:bg-black dark:text-white overscroll-none'>
         <FMReducedMotion>
           <AriaLinkProvider>{children}</AriaLinkProvider>
         </FMReducedMotion>
