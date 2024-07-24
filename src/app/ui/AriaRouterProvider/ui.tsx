@@ -11,11 +11,13 @@ declare module 'react-aria-components' {
   }
 }
 
-interface AriaLinkProviderProps {
+interface AriaRouterProviderProps {
   children: ReactNode;
 }
 
-export const AriaLinkProvider: FC<AriaLinkProviderProps> = ({ children }) => {
+export const AriaRouterProvider: FC<AriaRouterProviderProps> = ({
+  children,
+}) => {
   const router = useRouter();
 
   return <RouterProvider navigate={router.push}>{children}</RouterProvider>;

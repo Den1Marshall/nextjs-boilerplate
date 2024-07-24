@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import '@/app/index.css';
 import { startupImage } from './startupImage';
-import { FramerMotionConfig } from '@/app/ui';
-import { AriaLinkProvider } from '@/app/AriaLinkProvider';
+import { AriaRouterProvider, FramerMotionConfig } from '@/app/ui';
 
 export const metadata: Metadata = {
   title: 'CHANGETHIS',
@@ -54,7 +53,7 @@ export default function RootLayout({
     >
       <body className='h-full py-safe px-safe-or-5 dark:bg-black dark:text-white overscroll-none'>
         <FramerMotionConfig>
-          <AriaLinkProvider>{children}</AriaLinkProvider>
+          <AriaRouterProvider>{children}</AriaRouterProvider>
         </FramerMotionConfig>
       </body>
     </html>
