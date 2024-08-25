@@ -1,7 +1,11 @@
+import { Counter } from '@/widgets/Counter';
+import { Title } from './Title';
+
 export default function Home() {
   return (
-    <main>
-      <h1 className='text-center text-6xl'>Hello, World!</h1>
+    <main className='h-full flex flex-col'>
+      <Title />
+      <Counter />
     </main>
   );
 }
