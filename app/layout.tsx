@@ -4,9 +4,9 @@ import { startupImage } from './startupImage';
 import { AriaRouterProvider, FramerMotionConfig } from '@/app/ui';
 
 export const metadata: Metadata = {
-  title: 'CHANGETHIS',
-  description: 'CHANGETHIS',
-  metadataBase: new URL('https://CHANGETHIS.com'),
+  title: 'Next.js Boilerplate',
+  description: 'Next.js Boilerplate',
+  metadataBase: new URL('https://nextjs-boilerplate-gules-pi.vercel.app'),
   robots: 'all',
   alternates: {
     canonical: '/',
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: '/',
-    title: 'CHANGETHIS',
-    description: 'CHANGETHIS',
+    title: 'Next.js Boilerplate',
+    description: 'Next.js Boilerplate',
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'CHANGETHIS',
-    description: 'CHANGETHIS',
+    title: 'Next.js Boilerplate',
+    description: 'Next.js Boilerplate',
   },
 
   appleWebApp: {
