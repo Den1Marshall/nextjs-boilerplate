@@ -56,6 +56,7 @@ export default function RootLayout({
           <AriaRouterProvider>{children}</AriaRouterProvider>
         </FramerMotionConfig>
       </body>
+      {/* <GoogleAnalytics gaId="G-XYZ" /> */}
     </html>
   );
 }
