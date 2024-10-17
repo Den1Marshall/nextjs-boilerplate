@@ -4,7 +4,10 @@ import { startupImage } from './startupImage';
 import { AriaRouterProvider, FramerMotionProvider } from '@/app/providers';
 
 export const metadata: Metadata = {
-  title: 'Next.js Boilerplate',
+  title: {
+    template: '%s | Next.js Boilerplate',
+    default: 'Next.js Boilerplate',
+  },
   description: 'Next.js Boilerplate',
   metadataBase: new URL('https://nextjs-boilerplate-gules-pi.vercel.app'),
   robots: 'all',
