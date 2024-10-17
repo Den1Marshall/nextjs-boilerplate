@@ -1,1 +1,0 @@
-export { AriaRouterProvider } from './ui';
