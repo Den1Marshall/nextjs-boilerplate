@@ -1,1 +1,1 @@
-export { IncrementCount } from './ui';
+export { IncrementCount } from './ui/IncrementCount';
