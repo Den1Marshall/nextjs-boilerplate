@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss';
+import tailwindcssReactAriaComponents from 'tailwindcss-react-aria-components';
+import tailwindcssSafeArea from 'tailwindcss-safe-area';
 
 const config: Config = {
   content: [
@@ -12,10 +14,7 @@ const config: Config = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss-react-aria-components'),
-    require('tailwindcss-safe-area'),
-  ],
+  plugins: [tailwindcssReactAriaComponents, tailwindcssSafeArea],
 };
 
 export default config;
