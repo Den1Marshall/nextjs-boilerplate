@@ -24,7 +24,7 @@
 - Tailwind CSS (with `tailwindcss-safe-area` plugin)
 - React Aria Components (with RouterProvider, `tailwindcss-react-aria-components` plugin for Tailwind CSS)
 - Index CSS file with app-global styles
-- Framer Motion (with predefined config, which includes reduced motion on user preference, custom spring animation as default animation and rest delta with rest speed set to `0.0001` to achieve smoother animations ending)
+- Motion (Framer Motion) (with predefined config, which includes reduced motion on user preference, custom spring animation as default animation and rest delta with rest speed set to `0.0001` to achieve smoother animations ending)
 - Architectural methodology: Feature Sliced Design
 - Git Conventional Commits with commitlint and husky
 - PWA: @ducanh2912/next-pwa, pre-configured manifest.json and HTML meta tags & splash screens for iOS.
