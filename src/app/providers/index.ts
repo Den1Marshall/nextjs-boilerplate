@@ -1,2 +1,2 @@
 export { AriaRouterProvider } from './AriaRouterProvider';
-export { FramerMotionProvider } from './FramerMotionProvider';
+export { MotionProvider } from './MotionProvider';
