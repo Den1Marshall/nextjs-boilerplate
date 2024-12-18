@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next';
-import '@/app/index.css';
 import { startupImage } from './startupImage';
 import { AriaRouterProvider, MotionProvider } from '@/app/providers';
+
+import '@/app/index.css';
 
 export const metadata: Metadata = {
   title: {
@@ -54,7 +55,7 @@ export default function RootLayout({
       suppressHydrationWarning={true}
       className='h-[max(calc(100%_+_env(safe-area-inset-top)),_100%)] font-sans overscroll-none touch-pan-x touch-pan-y motion-safe:scroll-smooth'
     >
-      <body className='h-full py-safe px-safe-or-5 dark:bg-black dark:text-white overscroll-none'>
+      <body className='h-full py-safe px-safe-or-5 dark:bg-black dark:text-white overscroll-none antialiased'>
         <MotionProvider>
           <AriaRouterProvider>{children}</AriaRouterProvider>
         </MotionProvider>
