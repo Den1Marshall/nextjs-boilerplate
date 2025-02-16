@@ -1,4 +1,5 @@
 'use client';
+
 import { Count } from '@/entities/Count';
 import { IncrementCount } from '@/features/IncrementCount';
 import { FC, useState } from 'react';
